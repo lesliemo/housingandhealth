@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>
+			Health Note Template
+		</title>
+			
+		<link rel="stylesheet" type="text/css" href="css/main.css" media="screen">			
+  
+</head>
+	<!-- Site content begins here -->
+<body>
+  <header>
+    <section id="header">
+      <img src="logo.png">
+    </section>
+    <!-- TopNav begins -->
+    <div class="navbar">
+      <a href="#"><i class="fa fa-fw fa-user"></i> Contact</a>
+      <a href="#"><i class="fa fa-fw fa-user"></i> Get Involved</a>
+      <a href="#"><i class="fa fa-fw fa-envelope"></i> News</a>
+      <a href="#"><i class="fa fa-fw fa-search"></i> About</a>
+      <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+    </div>
+    <!-- TopNav begins -->
+
+  </header>
+  <div id="bill_ID">
+    <ul>
+      <li>bill topic</li>
+      <li>primary sponsors</li>
+    </ul>
+    <ul>
+      <li>bill id</li>
+      <li>analysts</li>
+    </ul>
+  </div>
+  <div>
+
+    <!-- Tobs begin -->
+    <div class="tab">
+      <button class="tablinks" onclick="opentab(event, 'description', 'display-description', 'explainer-description')">description</button>
+      <button class="tablinks" onclick="opentab(event, 'health', 'display-health', 'explainer-health')">health impacts</button>
+      <button class="tablinks" onclick="opentab(event, 'methods', 'display-methods', 'explainer-methods')">methodology</button>
+      <button class="tablinks" onclick="opentab(event, 'demographics', 'display-demographics', 'explainer-demographics')">which populations will be impacted</button>
+      <button class="tablinks" onclick="opentab(event, 'cta', 'display-cta', 'explainer-cta')">recommendations</button>
+    </div>
+    <!-- Tobs End -->
+
+
+    <div id="viewport">
+      <div class="main-cards">
+        <!-- Viewport card sc begins -->
+        <div class="card">Display
+          <div id="display-description" class="tabcontent">
+          <p>
+          
+          </p>
+          <center>
+            <img src="https://community-cdn-digitalocean-com.global.ssl.fastly.net/assets/tutorials/images/large/DOM_social01.png?1516136306" width="40%;">
+          </center>  
+            <p>overview image caption.</p>
+
+          </div>
+          
+          <div id="display-health" class="tabcontent">
+          <p>
+          
+          </p>
+          <center>
+            <img src="https://community-cdn-digitalocean-com.global.ssl.fastly.net/assets/tutorials/images/large/DOM_social01.png?1516136306" width="40%;">
+          </center>  
+            <p>HI image caption.</p>
+
+          </div>
+          
+          <div id="display-methods" class="tabcontent">
+          <p>
+          
+          </p>
+          <center>
+            <img src="https://community-cdn-digitalocean-com.global.ssl.fastly.net/assets/tutorials/images/large/DOM_social01.png?1516136306" width="40%;">
+          </center>  
+            <p>Logic model caption.</p>
+
+          </div>
+          
+          <div id="display-demographics" class="tabcontent">
+          <p>
+          
+          </p>
+          <center>
+            <img src="https://community-cdn-digitalocean-com.global.ssl.fastly.net/assets/tutorials/images/large/DOM_social01.png?1516136306" width="40%;">
+          </center>  
+            <p>Demographic infographics.</p>
+
+          </div>
+          
+          <div id="display-cta" class="tabcontent">
+          <p>
+          
+          </p>
+          <center>
+            <img src="https://community-cdn-digitalocean-com.global.ssl.fastly.net/assets/tutorials/images/large/DOM_social01.png?1516136306" width="40%;">
+          </center>  
+            <p>Cta infographic.</p>
+
+          </div>
+        </div>
+        <!-- Viewport card sc ends -->
+
+        <!-- Head Explainer card sc begins -->
+        <div class="card">Key messages
+          <div id="description" class="tabcontent">
+            <h3>Problem identification</h3>
+            <p>Describe scope of proposal.</p>
+
+          </div>
+
+          <div id="health" class="tabcontent">
+            <h3>Impact statement</h3>
+            <p>Describe health impact findings.</p>
+
+          </div>
+
+          <div id="methods" class="tabcontent">
+            <h3>Background</h3>
+            <p>Describe Research Methodology.</p>
+
+          </div>
+          <div id="demographics" class="tabcontent">
+            <h3>Most impacted demographics</h3>
+            <p>Placeholder text.</p>
+          </div>
+          <div id="cta" class="tabcontent">
+            <h3>Recommendations</h3>
+            <p>Placeholder text.</p>
+          </div>
+
+        </div>
+        <!-- Head Explainer card sc ends -->
+
+        <!-- Foot Explainer card sc begins -->
+
+        <div class="card">Explainer
+          <div id="explainer-description" class="tabcontent">
+            <h3>Evidence</h3>
+            <p>Describe screening criteria used to justify assessment.</p>
+          </div>
+
+          <div id="explainer-health" class="tabcontent">
+            <h3>Health impacts</h3>
+            <p>Include effect characterization diagram.</p>
+          </div>
+
+          <div id="explainer-methods" class="tabcontent">
+            <h3>Analysis methods</h3>
+            <p>Placeholder text.</p>
+          </div>
+          <div id="explainer-demographics" class="tabcontent">
+            <h3>Disparities disaggregated?</h3>
+            <p>Describe how social determinants shape disparities in outcomes. Disaggregate impacts by population and show trends for intersectional identities</p>
+          </div>
+          <div id="explainer-cta" class="tabcontent">
+            <h3>Call to Action</h3>
+            <p>Placeholder text.</p>
+          </div>
+
+        </div>
+<script>
+function opentab(evt, tabName, displayTabName, explainerTabName,) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  document.getElementById(displayTabName).style.display = "block";
+  document.getElementById(explainerTabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+
+</script>
+
+        <!-- Foot Explainer card sc ends -->
+
+      </div>
+
+    </div>
+</body>
+
+
+
+
+  </html>
