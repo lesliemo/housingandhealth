@@ -116,6 +116,7 @@ body {
 .card {
   display: flex;
   flex-direction: column;
+  overflow: scroll;
   align-items: center;
   width: 100%;
   background-color: #82bef6;
@@ -123,7 +124,7 @@ body {
   -webkit-column-break-inside: avoid;
   padding: 15px;
   box-sizing: border-box;
-  overflow: scroll;
+  
 }
 
 /* Force varying heights to simulate dynamic content */
