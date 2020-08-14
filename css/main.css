@@ -123,6 +123,7 @@ body {
   -webkit-column-break-inside: avoid;
   padding: 15px;
   box-sizing: border-box;
+  overflow: auto;
 }
 
 /* Force varying heights to simulate dynamic content */
